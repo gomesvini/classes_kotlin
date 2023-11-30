@@ -1,4 +1,4 @@
-class mutableStack <E>(vararg items: E){
+class mutableStack <E> (vararg items: E){
     private val elements = items.toMutableList()
     fun push(element: E) = elements.add(element)
     fun peek(): E = elements.last()
